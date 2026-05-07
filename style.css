@@ -66,7 +66,6 @@ body {
   align-items: center;
   gap: 8px;
   text-align: center;
-
   margin-top: -30px;
 }
 
@@ -148,7 +147,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: opacity 1.5s ease-in-out;  
+  transition: opacity 1s ease-in-out;  
   z-index: 0;
 }
 
@@ -409,7 +408,7 @@ body {
 .todo-box {
   position: absolute;
   top: 60%;
-  left: 5%; /* % 기반으로 왼쪽 이동 */
+  left: 5%; 
   transform: translateY(-50%);
   width: 400px;
   z-index: 15;
