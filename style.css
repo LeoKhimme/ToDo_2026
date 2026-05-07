@@ -21,7 +21,7 @@ body {
 #login-screen {
   position: fixed;
   inset: 0;
-  /* [수정] login.jpg의 청록~청남 그라디언트를 재현 */
+  
   background: linear-gradient(160deg, #56616a 0%, #4673ac 40%, #1a3a5c 100%);
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@ body {
 .weather-widget {
   position: fixed;
   top: 30px;
-  right: 30px;
+  right: 35px;
   text-align: right;
   line-height: 1.4;
   text-shadow: 0 1px 4px rgba(0,0,0,0.4);
@@ -135,9 +135,7 @@ body {
   transform: scale(1.03);
 }
 
-/* ════════════════════════════════════════════════════════
-   [화면 2] ToDo 메인 스크린
-════════════════════════════════════════════════════════ */
+
 #todo-screen {
   position: fixed;
   inset: 0;
@@ -150,7 +148,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: opacity 1.5s ease-in-out;  /* [수정] 1s → 1.5s, 3초 간격에 맞게 */
+  transition: opacity 1.5s ease-in-out;  
   z-index: 0;
 }
 
@@ -272,7 +270,6 @@ body {
   overflow-y: auto;
   padding-right: 4px;
   position: relative;
-  /* 제거: 왼쪽 밀기 제거 */
   margin-top: 80px;
 }
 
@@ -340,9 +337,7 @@ body {
   background: rgba(255,80,80,0.25);
 }
 
-/* ════════════════════════════════════════════════════════
-   완료된 작업 패널 (우하단)
-════════════════════════════════════════════════════════ */
+
 #done-panel {
   position: fixed;
   bottom: 50px;
@@ -382,7 +377,7 @@ body {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #4ade80;   /* 초록색 dot */
+  background: #4ade80;  
   flex-shrink: 0;
 }
 
@@ -391,7 +386,7 @@ body {
   color: rgba(255,255,255,0.65);
 }
 
-/* ── 반응형 (모바일) ─────────────────────────────────── */
+
 @media (max-width: 768px) {
   .clock {
     font-size: 3.5rem;
@@ -411,7 +406,6 @@ body {
 }
 
 
-/* ✅ 할일 목록 전용 박스 (왼쪽 이동) */
 .todo-box {
   position: absolute;
   top: 60%;
@@ -421,7 +415,6 @@ body {
   z-index: 15;
 }
 
-/* 내부 요소 너비 조정 */
 .todo-box #todo-list {
   margin-top: 20px;
 }
